@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.liquibase.org/xml/ns/dbchangelog 
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <!-- Example changelog entry with UP and DOWN migration SQL files -->
+    <changeSet author="HG152" id="20250806_123456">
+        <comment>123456</comment>
+        <sqlFile path="migrations/test_up.txt" relativeToChangelogFile="true"/>
+        <rollback>
+            <sqlFile path="migrations/test_down.txt" relativeToChangelogFile="true"/>
+        </rollback>
+    </changeSet>
+
+    <!-- Another sample changelog entry -->
+    <changeSet author="RL215" id="20240806_164860">
+        <comment>164860</comment>
+        <sqlFile path="migrations/20240806164860_UP.sql" relativeToChangelogFile="true"/>
+        <rollback>
+            <sqlFile path="migrations/20240806164860_DOWN.sql" relativeToChangelogFile="true"/>
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>
